@@ -3,7 +3,7 @@
 include "conexion.php";
 
 $user_id=null;
-$sql1= "select * from person where name like '%$_GET[s]%' or lastname like '%$_GET[s]%' or address like '%$_GET[s]%' or email like '%$_GET[s]%' or phone like '%$_GET[s]%' ";
+$sql1= "select * from equipment where name like '%$_GET[s]%' or lastname like '%$_GET[s]%' or address like '%$_GET[s]%' or email like '%$_GET[s]%' or phone like '%$_GET[s]%' ";
 $query = $con->query($sql1);
 ?>
 
@@ -33,8 +33,8 @@ $query = $con->query($sql1);
 	<td scope=".col-"><?php echo $r["email"]; ?></td>
 	<td scope=".col-"><?php echo $r["address"]; ?></td>
 	<td style="width:150px;">
-		<a href="./editar.php?id=<?php echo $r["id"];?>" class="btn btn-sm btn-warning">Editar</a>
-		<a href="#" id="del-<?php echo $r["id"];?>" class="btn btn-sm btn-danger">Eliminar</a>
+		<a href="./editar.php?id=<?php echo $r["id"];?>" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></a>
+		<a href="#" id="del-<?php echo $r["id"];?>" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i></a>
 		<script>
 		$("#del-"+<?php echo $r["id"];?>).click(function(e){
 			e.preventDefault();

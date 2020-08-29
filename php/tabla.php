@@ -45,9 +45,9 @@ $query = $con->query($sql1);
 	<td scope="col-xs-1"><?php echo $r["area_ubica"]; ?></td>
 	<td scope="col-xs-1"><?php echo $r["usuario_actual"]; ?><br><?php echo $r["contac_usuario_act"]; ?></td>
 	<td scope="col-xs-1"><?php echo $r["funcio_responsa"]; ?><br><?php echo $r["contact_funcio_responsa"]; ?></td>
-	<td style="width:155px;">
-		<a href="./editar.php?id=<?php echo $r["id"];?>" class="btn btn-sm btn-warning">Editar</a>
-		<a href="#" id="del-<?php echo $r["id"];?>" class="btn btn-sm btn-danger">Eliminar</a>
+	<td style="width:80px;">
+		<a href="./editar.php?id=<?php echo $r["id"];?>" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></a>
+		<a href="#" id="del-<?php echo $r["id"];?>" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i></a>
 		<script>
 		$("#del-"+<?php echo $r["id"];?>).click(function(e){
 			e.preventDefault();
