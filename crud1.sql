@@ -1,3 +1,4 @@
+-- Informacion de la tabla en la BD
 create database inventario;
 use inventario;
 
