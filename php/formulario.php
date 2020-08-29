@@ -16,7 +16,7 @@ while ($r=$query->fetch_object()){
 
 <?php if($equipment!=null):?>
 
-<form role="form" method="post" action="php/actualizar.php">
+<form role="form" method="post" action="php/actualizar.php" autocomplete="off">
 <div class="form-group">
     <label for="tipo_dispositivo">Tipo de Dispositivo</label>
     <input type="text" class="form-control" value="<?php echo $equipment->tipo_dispositivo; ?>" name="tipo_dispositivo" required>
