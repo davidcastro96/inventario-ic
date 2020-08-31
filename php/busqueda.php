@@ -8,9 +8,10 @@ $query = $con->query($sql1);
 ?>
 
 <?php if($query->num_rows>0):?>
-<table class="table table-sm table-hover">
-<thead class="thead-dark">
-<th scope="col-xs-1">Tipo de Dispositivos</th>
+<table class="table table-sm table-bordered table-hover">
+  <thead class="thead-dark">
+    <tr>
+	  <th scope="col-xs-1">Tipo de Dispositivos</th>
       <th scope="col-xs-1">Marca</th>
 	  <th scope="col-xs-1">Modelo</th>
 	  <th scope="col-xs-1">Serial</th>
@@ -25,7 +26,8 @@ $query = $con->query($sql1);
 	  <th scope="col-xs-1">Usuario Actual y Contacto</th>
 	  <th scope="col-xs-1">Funcionario a Cargo y Contacto</th>
 	  <th scope="col-xs-1">Acciones</th>
-</thead>
+    </tr>
+  </thead>	
 <?php while ($r=$query->fetch_array()):?>
 <tr>
 <td scope="col-xs-1"><?php echo $r["tipo_dispositivo"]; ?></td>

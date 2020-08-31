@@ -20,5 +20,5 @@ create table equipment(
 	contac_usuario_act varchar(100) not null,
 	funcio_responsa varchar(100) not null,
 	contact_funcio_responsa varchar(100) not null,
-	created_at datetime not null
+	created_at datetime not null,
 );
