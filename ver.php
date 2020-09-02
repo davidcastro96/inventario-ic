@@ -16,7 +16,7 @@
 		<h3>Registros</h3>
 <!-- Button trigger modal -->
   <a data-toggle="modal" href="#myModal" class="btn btn-dark">Agregar un registro</a>
-<br><br>
+<br><br>  
   <!-- Modal -->
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">

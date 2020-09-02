@@ -3,7 +3,7 @@
 include "conexion.php";
 
 $user_id=null;
-$sql1= "select * from equipment where tipo_dispositivo like '%$_GET[s]%' or marca like '%$_GET[s]%' or modelo like '%$_GET[s]%' or serie like '%$_GET[s]%' or os like '%$_GET[s]%' or licencia_os like '%$_GET[s]%' or paq_office like '%$_GET[s]%' or licencia_office like '%$_GET[s]%' or fecha_compra like '%$_GET[s]%' or proveedor like '%$_GET[s]%' or num_activo like '%$_GET[s]%' or area_ubica like '%$_GET[s]%' or usuario_actual like '%$_GET[s]%' or contac_usuario_act like '%$_GET[s]%' or funcio_responsa like '%$_GET[s]%' or contact_funcio_responsa like '%$_GET[s]%' ";
+$sql1= "select * from equipment where tipo_dispositivo like '%$_GET[s]%' or marca like '%$_GET[s]%' or modelo like '%$_GET[s]%' or serie like '%$_GET[s]%' or os like '%$_GET[s]%' or licencia_os like '%$_GET[s]%' or paq_office like '%$_GET[s]%' or licencia_office like '%$_GET[s]%' or fecha_compra like '%$_GET[s]%' or proveedor like '%$_GET[s]%' or num_activo like '%$_GET[s]%' or area_ubica like '%$_GET[s]%' or usuario_actual like '%$_GET[s]%' or contac_usuario_act like '%$_GET[s]%' or funcio_responsa like '%$_GET[s]%' or contact_funcio_responsa like '%$_GET[s]%'";
 $query = $con->query($sql1);
 ?>
 
